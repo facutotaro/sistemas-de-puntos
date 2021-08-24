@@ -35,3 +35,8 @@ Colley
 Ganados/perdidos
 
 Método casero (y pensarlo)
+
+
+## Pipeline
+
+Hacer grafiquitos
