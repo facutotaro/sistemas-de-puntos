@@ -51,9 +51,14 @@ Ganados/perdidos
 Método casero (y pensarlo)
 
 
+
 ## Pipeline
 
-Hacer grafiquitos
+Acomodar los datos (filtrar la basura) (¿Python?)
+
+Métodos para solucionar cosas rápido (C++)
+
+Hacer grafiquitos (¿Python?)
 
 
 ## Opcionales
