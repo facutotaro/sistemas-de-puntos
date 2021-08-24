@@ -1,10 +1,8 @@
-# MetNum_TP1
+# Cosas para hacer
 
-Perdí
+## Entender la matríz de Colley
 
-## Cosas para hacer
-
-Entender la matríz de Colley
+- 
 
 |2+n1        a            b     |
 
@@ -22,3 +20,9 @@ Entender la matríz de Colley
 C.r = b
 
 A.x = b 
+
+
+## Implementación
+
+Colley
+Ganados/perdidos
