@@ -34,6 +34,14 @@ A.x = b
 Datos artificiales para mostrar comportamientos
 
 
+## Adversario
+
+Preguntar ambiguedad (¿sabemos el futuro de los partidos entre otros equipos?)
+
+En tal caso, estrategia optima
+
+Caso contratio, vamos jugan
+
 
 ## Implementación
 
@@ -46,8 +54,9 @@ Método casero (y pensarlo)
 
 ## Pipeline
 
-
-
 Hacer grafiquitos
 
 
+## Opcionales
+
+Considerar empates
