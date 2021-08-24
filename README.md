@@ -60,3 +60,7 @@ Hacer grafiquitos
 ## Opcionales
 
 Considerar empates
+
+Características especiales para solución más eficiente (pista: es dominante y simétrica)
+
+Matrices ralas eficientes en espacio y tiempo
