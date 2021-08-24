@@ -26,6 +26,13 @@ A.x = b
 
 ¿Porqué siempre se puede resolver con Colley?
 
+¿Colley es justo?
+
+
+## Fabricar
+
+Datos artificiales para mostrar comportamientos
+
 
 
 ## Implementación
@@ -39,4 +46,8 @@ Método casero (y pensarlo)
 
 ## Pipeline
 
+
+
 Hacer grafiquitos
+
+
