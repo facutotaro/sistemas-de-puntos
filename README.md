@@ -2,6 +2,6 @@
 
 Perdí
 
-## Getting started
+## Cosas para hacer
 
-El juego
+Entender la matríz de Colley
