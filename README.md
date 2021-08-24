@@ -22,7 +22,16 @@ C.r = b
 A.x = b 
 
 
+## pensarlo
+
+¿Porqué siempre se puede resolver con Colley?
+
+
+
 ## Implementación
 
 Colley
+
 Ganados/perdidos
+
+Método casero (y pensarlo)
