@@ -2,8 +2,7 @@
 
 ## Entender la matríz de Colley
 
-- 
-
+```
 |2+n1        a            b     |
 
 |  a        2+n2          c     |
@@ -20,7 +19,7 @@
 C.r = b
 
 A.x = b 
-
+```
 
 ## pensarlo
 
