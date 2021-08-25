@@ -61,3 +61,5 @@ if (isAwesome){
   return true
 }
 ```
+
+![Cuentita](/img/equation.svg)
