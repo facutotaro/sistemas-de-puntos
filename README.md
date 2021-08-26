@@ -52,15 +52,16 @@ A.x = b
 #### Tests
 * A la salida del Pipeline
 
+![Cuentita](/images/latex/renders/ecuacion-peola.svg)
 
 ![LaTeX](/images/plot.jpg)
 
 
-![Cuentita](/images/ecuacion-fea.svg)
 
 ```javascript
 if (el-juego){
   return true
 }
 ```
-![Cuentita](/images/ecuacion-peola.svg)
+
+![Cuentita](/images/latex/renders/ecuacion-fea.svg)
