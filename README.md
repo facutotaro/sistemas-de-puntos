@@ -53,13 +53,14 @@ A.x = b
 * A la salida del Pipeline
 
 
-![LaTeX](/img/latex.jpeg)
+![LaTeX](/images/plot.jpg)
 
+
+![Cuentita](/images/ecuacion-fea.svg)
 
 ```javascript
-if (isAwesome){
+if (el-juego){
   return true
 }
 ```
-
-![Cuentita](/img/equation.svg)
+![Cuentita](/images/ecuacion-peola.svg)
