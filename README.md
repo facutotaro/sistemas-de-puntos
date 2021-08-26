@@ -1,4 +1,4 @@
-# Cosas para hacer
+# Cosas para hacer Ayer
 
 #### Entender la matríz de Colley
 
