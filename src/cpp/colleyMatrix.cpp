@@ -3,7 +3,7 @@
 vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
   // Inicializar matriz de Colley
   vector<vector<double>> matriz =
-  vector<vector<double>>(participantes, vector<double>(participantes));
+    vector<vector<double>>(participantes, vector<double>(participantes, 0));
   for (int i = 0; i < participantes; i++) { matriz[i][i] = 2; }
 
   // Inicializar contadores
