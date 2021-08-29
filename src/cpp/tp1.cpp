@@ -4,9 +4,9 @@
 using namespace std;
 
 #include "partido.cpp"
-#include "colleyMatrix.cpp"
-#include "winPercentage.cpp"
-#include "ratingIndex.cpp"
+#include "colleyMatrix.h"
+#include "winPercentage.h"
+#include "ratingIndex.h"
 
 int main(int argc, char* argv[]) {
 	// Abrir archivo de entrada

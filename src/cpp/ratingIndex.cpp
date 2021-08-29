@@ -1,3 +1,5 @@
+#include "ratingIndex.h"
+
 vector<double> ratingIndex(int participantes, vector<Partido> partidos) {
 	/* [ Realice magia turbia aquí ] */
 

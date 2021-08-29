@@ -1,3 +1,5 @@
+#include "winPercentage.h"
+
 vector<double> winPercentage(int participantes, vector<Partido> partidos) {
   // Inicializar contadores
   vector<int> ganados = vector<int>(participantes, 0);
