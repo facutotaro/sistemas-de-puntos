@@ -1,4 +1,5 @@
 #include "colleyMatrix.h"
+#include <cstdio>
 
 vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
   // Inicializar matriz de Colley
@@ -36,10 +37,36 @@ vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
 }
 
 void eliminacionGaussiana(vector<vector<double>>& matriz, vector<double>& ext) {
-  /* [ Realice magia turbia aquí ] */
+  int tamanio = matriz.size();
+  
+  for (int paso = 1; paso < tamanio; paso++) {
+    for (int fila = paso+1; fila <= tamanio; fila++) {
+      // Calcular multiplicador
+      double multiplicador = matriz[fila-1][paso-1]/matriz[paso-1][paso-1];
+
+      // Restar multiplo a la fila
+      for (int columna = paso; columna <= tamanio; columna++) {
+        matriz[fila-1][columna-1] -= matriz[paso-1][columna-1]*multiplicador;
+      }
+      ext[fila-1] -= ext[paso-1]*multiplicador;
+    }
+  }
 }
 
 vector<double> susReversa(vector<vector<double>>& matriz, vector<double>& ext) {
-  /* [ Realice magia turbia aquí ] */
-	return vector<double>(2, 0.1234);
+  int tamanio = matriz.size();
+  vector<double> solucion = vector<double>(tamanio);
+
+  for (int fila = tamanio; fila >= 1; fila--) {
+    // Calcular la suma de los demás términos de la ecuación
+    double sumaDeRestoDeLaFila = 0;
+    for (int columna = fila+1; columna <= tamanio; columna++) {
+      sumaDeRestoDeLaFila += matriz[fila-1][columna-1]*solucion[columna-1];
+    }
+
+    // Despejar la coordenada sin resolver, y calcular
+    solucion[fila-1] = (ext[fila-1]-sumaDeRestoDeLaFila)/matriz[fila-1][fila-1];
+  }
+
+	return solucion;
 }
