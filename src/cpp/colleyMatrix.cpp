@@ -1,5 +1,4 @@
 #include "colleyMatrix.h"
-#include <cstdio>
 
 vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
   // Inicializar matriz de Colley
@@ -17,8 +16,8 @@ vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
     perdidos[p.perdedor()]++;
 
     matriz[p.ganador()][p.ganador()]++;
-    matriz[p.ganador()][p.perdedor()]++;
-    matriz[p.perdedor()][p.ganador()]++;
+    matriz[p.ganador()][p.perdedor()]--;
+    matriz[p.perdedor()][p.ganador()]--;
     matriz[p.perdedor()][p.perdedor()]++;
   }
 
@@ -38,7 +37,7 @@ vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
 
 void eliminacionGaussiana(vector<vector<double>>& matriz, vector<double>& ext) {
   int tamanio = matriz.size();
-  
+
   for (int paso = 1; paso < tamanio; paso++) {
     for (int fila = paso+1; fila <= tamanio; fila++) {
       // Calcular multiplicador
