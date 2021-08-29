@@ -1,5 +1,7 @@
 #include <cassert>
 
+#ifndef PARTIDO
+
 class Partido {
   public:
     Partido(int equipoA, int equipoB, int puntajeA, int puntajeB) {
@@ -15,3 +17,6 @@ class Partido {
   private:
     int _ganador, _perdedor;
 };
+
+#define PARTIDO
+#endif

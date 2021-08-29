@@ -1,8 +1,10 @@
+#include "colleyMatrix.h"
+
 vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
   // Inicializar matriz de Colley
   vector<vector<double>> matriz =
   vector<vector<double>>(participantes, vector<double>(participantes));
-  for (int i = 0; i < equipos; i++) { colley[i][i] = 2; }
+  for (int i = 0; i < participantes; i++) { matriz[i][i] = 2; }
 
   // Inicializar contadores
   vector<int> ganados  = vector<int>(participantes, 0);
@@ -20,23 +22,24 @@ vector<double> colleyMatrix(int participantes, vector<Partido> partidos) {
   }
 
   // Calcular vector de extensión
-  vector<double> extension = vector<double>(equipos);
-  for (int i = 0; i < equipos; i++) {
+  vector<double> extension = vector<double>(participantes);
+  for (int i = 0; i < participantes; i++) {
     extension[i] = 1+(ganados[i]-perdidos[i])/2.0; }
 
   // Realizar eliminación gaussiana
-  eliminacionGaussiana(&matriz, &extension);
+  eliminacionGaussiana(matriz, extension);
 
   // Realizar sustitución en reversa
-  vector<double> resultados = susReversa(&matriz, &extension);
+  vector<double> resultados = susReversa(matriz, extension);
 
 	return resultados;
 }
 
-void eliminacionGaussiana(&vector<vector<double>> matriz, &vector<double> ext) {
+void eliminacionGaussiana(vector<vector<double>>& matriz, vector<double>& ext) {
   /* [ Realice magia turbia aquí ] */
 }
 
-vector<double> susReversa(&vector<vector<double>> matriz, &vector<double> ext) {
+vector<double> susReversa(vector<vector<double>>& matriz, vector<double>& ext) {
   /* [ Realice magia turbia aquí ] */
+	return vector<double>(2, 0.1234);
 }
