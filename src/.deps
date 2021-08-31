@@ -1,0 +1,43 @@
+{
+    ".deps_version": 2,
+    "g++ -o ./tp ./cpp/tp1.o ./cpp/ratingIndex.o ./cpp/partido.o ./cpp/colleyMatrix.o ./cpp/winPercentage.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/colleyMatrix.o": "input-a0387ad9d18a94faa4aae1e599b8a313",
+        "cpp/partido.o": "input-fa5b7324946f9ebe294470b8a4885be3",
+        "cpp/ratingIndex.o": "input-e6a2dc0b756a144b3377d0cb144ea05c",
+        "cpp/tp1.o": "input-877080b92c5d7b4eb6adf6853583f85e",
+        "cpp/winPercentage.o": "input-2099ed61fa232822f19446e1978f7980",
+        "tp": "input-539e623b0d77dbae2e7a36c7c99e89c8"
+    },
+    "g++ -std=c++11 -O2 -c ./cpp/colleyMatrix.cpp -o ./cpp/colleyMatrix.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/colleyMatrix.cpp": "input-7e8596dea705aa66a4d9176d88de6a38",
+        "cpp/colleyMatrix.o": "input-a0387ad9d18a94faa4aae1e599b8a313"
+    },
+    "g++ -std=c++11 -O2 -c ./cpp/partido.cpp -o ./cpp/partido.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/partido.cpp": "input-36638a76bccd13d4e1a9f7911b468574",
+        "cpp/partido.o": "input-fa5b7324946f9ebe294470b8a4885be3"
+    },
+    "g++ -std=c++11 -O2 -c ./cpp/ratingIndex.cpp -o ./cpp/ratingIndex.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/ratingIndex.cpp": "input-f88c99f0d38ae70655e07c6a5693e31d",
+        "cpp/ratingIndex.o": "input-e6a2dc0b756a144b3377d0cb144ea05c"
+    },
+    "g++ -std=c++11 -O2 -c ./cpp/tp1.cpp -o ./cpp/tp1.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/tp1.cpp": "input-6b59fdadc8cc2b035c4e59c67f4c5948",
+        "cpp/tp1.o": "input-877080b92c5d7b4eb6adf6853583f85e"
+    },
+    "g++ -std=c++11 -O2 -c ./cpp/winPercentage.cpp -o ./cpp/winPercentage.o": {
+        ".": "input-5058f1af8388633f609cadb75a75dc9d",
+        "cpp": "input-2c5f2cba9af7f92986d3de1e753f3faa",
+        "cpp/winPercentage.cpp": "input-a52bf1b593cb0669fac9af7e2ec9b8b6",
+        "cpp/winPercentage.o": "input-2099ed61fa232822f19446e1978f7980"
+    }
+}
