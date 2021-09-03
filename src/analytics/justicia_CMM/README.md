@@ -53,38 +53,24 @@ Para ello se define **justicia** por:
 >Que no sea posible que el resultado de un partido
 entre dos equipos afecte indirectamente el ranking de un tercero
 
-## Analisis Teorico
-
-Suponiendo la ocurrencia de un partido entre el equipo i y el equipo j, vamos a analizar que le ocurre a un tercer equipo, llamdo h.
-
-Haciendo un primer analisis teorico, podemos observar la ecuacion lineal correspondiente al equipo h: ...
-
-La misma contiene las variables n\_tot,h, n\_w,h, n\_l,h y todos los valores de ranking. Sabemos que si el partido fue entre i y j, luego n\_tot,h, n\_w,h, n\_l,h deben mantener el mismo valor. Por lo tanto, para que se siga cumpliendo la igualdad de la ecuacion del equipo h debe darse alguna de las siguientes situciones:
-
--  (1) Los valores de ranking no se modificaron (lo cual seria extraño, ya que esto implica que el ranking de i y j luego de su partido no se modificaron, cuando se sabe que uno gano y otro perdio)
-
-- (2) Los valores de ranking si cambian y:
-	- (2.1) si h no jugo ni con i ni con j, el ranking de h no se modifica
-	- (2.2) si h jugo exclusivamente con i o con j, el ranking de h se modifica
-	- (2.3) si h juego tanto con i como con j:
-		- (2.3.1) el ranking de h se modifica
-		- (2.3.2) el ranking de h no se modifica (se compensa el ranking de i con el ranking de j)
-
-Partiendo de este analisis, resulta razonable estudiar los casos (1) y (2.3), ya que en los demas se pudo deducir que es lo que sucede con el ranking de h.
+Aclaro que con ranking nos referimos tanto al valor del ranking de un equipo, desde ahora "rating", como a la posición en el orden segun rating que ocupa un equipo respecto a los demas (1ro, 2do, 3ro etc..)
 
 ## Experimentación
 
-Para la experimentacion vamos a crear tablas de datos que cumplan con las condiciones de los casos a estudiar.
+Suponiendo la ocurrencia de un partido entre el equipo i y el equipo j, vamos a analizar que le ocurre a un tercer equipo, llamdo h.
 
-### caso 1:
+Para ello, vamos a categorizar todos los posibles torneos a estudiar en las siguiente categorias:
 
-Creamos tablas, con 3, 10 y 100 equipos, con una cantidad de partidos aleatoreos (cualquier equipo contra cualquier otro) de 0.01, 0.1, 1 y 2 veces la cantidad de equipos, por equipo, siempre forzando a que todos los equipos jueguen por lo menos una vez.
+- (1) h esta "desconectada por partidos" de i y j.
 
-Como hipotesis para todos los casos tengo que nunca es verdadero el caso 1, es decir, que luego de un partido el vector de los valores de ranking siempre se modifica.
+- (2) h esta "conectada por partidos" con i y j, y:
 
-### caso 2.3:
+	- (2.1) h no jugo ni con i y ni con j
 
-thinking
+	- (2.2) h jugo solo con i o (exclusivo) con j
+
+	- (2.3) h jugo con i y con j
+
 
 (Poner en formato las refencias)
 
