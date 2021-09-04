@@ -71,6 +71,19 @@ Para ello, vamos a categorizar todos los posibles torneos a estudiar en las sigu
 
 	- (2.3) h jugo con i y con j
 
+###Experimento (1) :
+
+Creamos una competencia en donde compitan dos grupos de equipos entre ellos y nunca un equipo de un grupo compita con un equipo de otro grupo. 
+
+Nombrando a un grupo "A" y al otro grupo "B", posicionamos al equipo h en el grupo A y a los equipos i y j en el grupo B.
+
+Luego de simular varios partidos con resultado aleatoreos en ambos grupos, almacenamos el ranking (rating y posicion) de h. Despues hacemos que i y j compitan para luego comparar el ranking de h resultante con el anterior al partido.
+
+Hipotesis: no cambia el rating, pero puede cambiar el ranking
+
+###Experimento (2.1) :
+
+
 
 (Poner en formato las refencias)
 
