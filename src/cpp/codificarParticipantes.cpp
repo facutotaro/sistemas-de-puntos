@@ -39,11 +39,11 @@ int main(int argc, char* argv[]) {
 
 		// En caso de encontrar un equipo por primera vez, generar su codificación
 		if (codigos.count(equipoA) == 0) {
-			codigos[equipoA] = codigos.size();
+			codigos[equipoA] = codigos.size()+1;
 			codigo << equipoA << endl;
 		}
 		if (codigos.count(equipoB) == 0) {
-			codigos[equipoB] = codigos.size();
+			codigos[equipoB] = codigos.size()+1;
 			codigo << equipoB << endl;
 		}
 
@@ -52,7 +52,7 @@ int main(int argc, char* argv[]) {
 		salida << codigos[equipoA] << ' ';
 		salida << puntajeA         << ' ';
 		salida << codigos[equipoB] << ' ';
-		salida << equipoB          << endl;
+		salida << puntajeB         << endl;
 	}
 
 	// Cerrar archivos
