@@ -14,9 +14,9 @@ vector<double> winPercentage(int participantes, vector<Partido> partidos) {
   }
 
   // Calcular porcentaje
-  vector<double> resultados = vector<double>(participantes);
+  vector<double> resultados = vector<double>(participantes, 0.5);
   for (int i = 0; i < participantes; i++) {
-    assert(jugados[i] > 0);
+    if (jugados[i] == 0) { continue; }
     resultados[i] = 1.0*ganados[i]/jugados[i];
   }
 

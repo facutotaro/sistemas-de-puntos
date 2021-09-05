@@ -21,34 +21,36 @@ vector<double> ratingIndex(int participantes, vector<Partido> partidos) {
   }
 
   // Calcular porcentaje propio
-  vector<double> porcentajesPropios = vector<double>(participantes);
+  vector<double> porcentajesPropios = vector<double>(participantes, 0.5);
   for (int i = 0; i < participantes; i++) {
-    assert(jugadosTotal[i] > 0);
+    if (jugadosTotal[i] == 0) { continue; }
     porcentajesPropios[i] = 1.0*ganadosTotal[i]/jugadosTotal[i];
   }
 
   // Calcular porcentaje de oponentes
-  vector<double> porcentajesOponentes = vector<double>(participantes);
+  vector<double> porcentajesOponentes = vector<double>(participantes, 0.5);
   for (int i = 0; i < participantes; i++) {
 		double porcentajeOponentes = 0;
 		for (int oponente = 0; oponente < participantes; oponente++) {
 			int ganadosContraOtro = ganadosTotal[oponente]-ganadosContra[oponente][i];
 			int jugadosContraOtro = jugadosTotal[oponente]-jugadosContra[oponente][i];
-			assert(jugadosContraOtro > 0);
+      if (jugadosContraOtro == 0) { porcentajeOponentes += 0.5; continue; }
 			porcentajeOponentes += 1.0 * jugadosContra[i][oponente] *
 				ganadosContraOtro / jugadosContraOtro;
 		}
+    if (jugadosTotal[i] == 0) { continue; }
 		porcentajesOponentes[i] = porcentajeOponentes / jugadosTotal[i];
   }
 
   // Calcular porcentaje de oponentes de oponentes
-  vector<double> porcentajesOponentesOponentes = vector<double>(participantes);
+  vector<double>porcentajesOponentesOponentes=vector<double>(participantes,0.5);
   for (int i = 0; i < participantes; i++) {
 		double porcentajeOponentesOponentes = 0;
 		for (int oponente = 0; oponente < participantes; oponente++) {
 			porcentajeOponentesOponentes += 1.0 * jugadosContra[i][oponente] *
 				porcentajesOponentes[oponente];
 		}
+    if (jugadosTotal[i] == 0) { continue; }
 		porcentajesOponentesOponentes[i] =
 			porcentajeOponentesOponentes / jugadosTotal[i];
   }
