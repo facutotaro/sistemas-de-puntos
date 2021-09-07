@@ -22,8 +22,11 @@ ratingIndex.o: ratingIndex.cpp ratingIndex.h partido.cpp
 codificarParticipantes: codificarParticipantes.o partido.o
 	g++ -Wall $^ -o $@
 
-codificarParticipantes.o: codificarParticipantes.cpp
-	g++ -c -Wall $< -o $@
+codificarParticipantes.o: codificarParticipantes.notcpp
+	# Para evitar que el python de tests salvaje compile esto
+	cp codificarParticipantes.notcpp codificarParticipantes.cpp
+	g++ -c -Wall codificarParticipantes.cpp -o $@
+	rm -f codificarParticipantes.cpp
 
 .PHONY: clean
 clean:
