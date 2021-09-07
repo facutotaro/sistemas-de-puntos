@@ -63,11 +63,7 @@ Para ello, vamos a categorizar todos los posibles torneos a estudiar en las sigu
 
 - (1) h esta "desconectada por partidos" de i y j.
 
-- (2) h esta "conectada por partidos" con i y j, y:
-
-	- (2.1) h no jugo ni con i ni con j
-	- (2.2) h jugo exclusivamente con i o con j
-	- (2.3) h jugo con i y con j
+- (2) h esta "conectada por partidos" con i y j
 
 ### Experimento (1) :
 
@@ -85,59 +81,15 @@ Volviendo al caso (1), podemos concluir que h (el equipo observado del grupo A),
 
 ### Experimento (2) :
 
-Creamos una competencia en donde vamos a observar el comportamiento de un equipo h (representado por el indice 1 en la tabla), respecto a los resultados de otros dos equipos, i y j (representados por el indice 2 y 3 en la tabla respectivamente)
+Creamos una competencia aleatorea en donde vamos a observar el comportamiento de un equipo h (representado por el indice 1 en la tabla), respecto a los resultados de otros dos equipos, i y j (representados por el indice 2 y 3 en la tabla respectivamente)
 
-#### Experimento (2.1) :
+Luego, para analizar si CMM es justo, vamos a comparar el rating final de h respecto a diferentes resultados de los partidos de i y j. Mas precisamente vamos a ver que le sucede al raking de h cuando:
 
-En esta experimento vamos a estudiar que sucede con el raking de h cuando nunca juega ni con i ni con j. 
-
-Para ello la tabla va a estar formada primero por partidos aleatoreos con h, sin que juegue con i y j, y luego por partidos aleatoreos sin h. Luego se analizara que hubiera pasado con el ranking de h si: 
-- i y j tiene el resultado obtenido
-- i y j tiene el resultado inverso
-- entre i y j gana siempre i
-- entre i y j gana siempre j
-- y otro resultado aleatoreo entre los partidos de i y j.
-
-hipotesis: los partidos de i y j afectan al rating de h, mientras que la posicion puede cambiar o no.
-
-Resultados: (graficos)
-
-En los experimentos se puede observar que, como se habia planteado en la hipotesis, los resultados de los partidos de i y j afectan en mayor o menor medida el rating de h, lo cual puede o no afectar su posicion en el ranking.
-
-Ademas, luego de observar los casos de 6 equipos con 12 partidos, 10 equipos con 100 partidos y 20 equipos con 200 partidos, los resultados entre los partidos entre i y j afectan cada vez menos al rating de h. Esto se evidencia midiendo el desvio standard de una muestra de 1000 rating en cada uno de los casos, el cual es de alrededor de 0.15 en el primer caso, 0.12 en el segundo caso y 0.09 en el ultimo caso.
-
-Creemos que esto ultimo se debe a la mayor cantidad de equipos y variedad de partidos, lo que causa que solo los enfrentamientos entre i y j no afecten tanto al rating de h.
-
-#### Experimento (2.2) :
-
-En esta experimento vamos a estudiar que sucede con el ranking de h cuando jugo con j pero no con i.
-
-Para ellos, al igual que en (2.1), vamos a crear una tabla en donde primero h juegue todos sus partidos(inlcuyendo los que juga contra j), y luego se jueguen los demas partidos de la competencia de manera aleatorea. Luego se analizara que hubiera pasado con el resultado si:
-
-- i y j tiene el resultado obtenido
-- i y j tiene el resultado inverso
-- entre i y j gana siempre i
-- entre i y j gana siempre j
-- y otro resultado aleatoreo entre los partidos de i y j.
-
-Hipostesis: 
-- (2.1.1) Creemos que los resultados de h van a variar mas en cada caso, respecto a 2.1, ya que el rating de j va a influir directamente en el calculo del rating de h (observando la ecucacion lineal asociada a h). (Cov gana todo i gana todo j)
-
-Ademas suponemos que:
-- (2.1.2) De entre los casos que planteamos, siempre el rating mayor de h se va a obtener cuando j gane todos sus partidos contra i.Y por el contrario, siempre el rating de h sera el menor cuando j pierda todos sus partidos contra i.
-
-Respecto de la posicion en el ranking, pensamos que la misma puede o no verse modificada.
-
-Resultados: (graficos)
-
-Para evaluar la primera hipotesis calculamos la media de la diferencia entre el rating de h entre cuando i gana siempre sobre j y el rating de h cuando j gana siempre sobre i. Luego comparamos este resultado con el mismo calculo pero sobre el experimento (2.1).
-
-Como resultado sobre los casos de 6 participantes con 12 partidos, 10 participantes con 100 partidos y 20 participantes con 200 partidos, se obtuvo en todos los casos que, la diferencia entre el rating de h entre cuando i gana siempre sobre j y el rating de h cuando j gana siempre sobre i, es mayor en el experimento (2.2).
-
-Para evaluar la segunda hipotesis se estimo la probabilidad de que el rating obtenido cuando j gana todos los partidos sobre i sea mayor al rating obtenido cuando i gana todos los partidos sobre j.
-
-Como resultado sobre los casos de 6 participantes con 12 partidos, 10 participantes con 100 partidos y 20 participantes con 200 partidos, se obtuvo  la hipotesis es verdadera entre un 80% y 90% de la veces, por lo tanto no es verdadera, ya que hay casos donde rating obtenido cuando j gana todos los partidos sobre i es menor al rating obtenido cuando i gana todos los partidos sobre j.
-
+- se tiene a los partidos aleatoreos
+- lo partidos de i y j tuvieron el resultado inverso al aleatoreo
+- i gana siempre sobre j
+- j gana siempre sobre i
+- se eligen otros resultados aleatoreos para los partidos entre i y j
 
 (Poner en formato las refencias)
 
