@@ -1,6 +1,7 @@
 #include <vector>
 #include <cstring>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 #include "partido.cpp"
@@ -56,6 +57,7 @@ int main(int argc, char* argv[]) {
 	salida.open(argv[2]);
 
 	// Volcar resultados
+	salida << setprecision(14);
 	for (int i = 0; i < participantes; i++) { salida << resultados[i] << endl; }
 
 	// Cerrar archivo de salida
