@@ -53,7 +53,7 @@ Para ello se define **justicia** por:
 >Que no sea posible que el resultado de un partido
 entre dos equipos afecte indirectamente el ranking de un tercero
 
-Aclaro que con ranking nos referimos tanto al valor del ranking de un equipo, desde ahora "rating", como a la posición en el orden segun rating que ocupa un equipo respecto a los demas (1ro, 2do, 3ro etc..)
+Aclaro que con ranking nos referimos tanto al valor del ranking de un equipo, desde ahora "rating", como a la posición en el orden segun rating que ocupa un equipo respecto a los demas (1ro, 2do, 3ro etc..), desde ahora "posicion".
 
 ## Experimentación
 
@@ -81,15 +81,23 @@ Volviendo al caso (1), podemos concluir que h (el equipo observado del grupo A),
 
 ### Experimento (2) :
 
-Creamos una competencia aleatorea en donde vamos a observar el comportamiento de un equipo h (representado por el indice 1 en la tabla), respecto a los resultados de otros dos equipos, i y j (representados por el indice 2 y 3 en la tabla respectivamente)
+Creamos una competencia aleatorea en donde vamos a observar el comportamiento de un equipo h (representado por el indice 1 en la tabla), respecto a los resultados de otros dos equipos, i y j (representados por el indice 2 y 3 en la tabla respectivamente). Cabe aclarar que vamos a asegurar que i y j se enfrenten por lo menos una vez, y que h este conectada por partidos con i y j.
 
-Luego, para analizar si CMM es justo, vamos a comparar el rating final de h respecto a diferentes resultados de los partidos de i y j. Mas precisamente vamos a ver que le sucede al raking de h cuando:
+Luego, para analizar si CMM es justo, vamos a comparar el raking final de h respecto a diferentes resultados de los partidos de i y j. Mas precisamente vamos a ver que le sucede al raking de h cuando:
 
 - se tiene a los partidos aleatoreos
 - lo partidos de i y j tuvieron el resultado inverso al aleatoreo
 - i gana siempre sobre j
 - j gana siempre sobre i
 - se eligen otros resultados aleatoreos para los partidos entre i y j
+
+Hipotesis: 
+
+el rating de h se va a ver afectado por los diferentes resultados de los partidos de i y j, ya que los mismo modifican el ranting de i y j, que a su vez pueden modificar el ranting de h. Por otro lado, la posicion puede o no ser modificada.
+
+Resultados:
+
+
 
 (Poner en formato las refencias)
 
